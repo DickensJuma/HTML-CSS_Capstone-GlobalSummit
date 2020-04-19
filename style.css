@@ -1,0 +1,119 @@
+body {
+  background-color: #d3d3de;
+  height: 100%;
+}
+
+header {
+  background-color: white;
+}
+
+.top-nav {
+  height: 30px;
+  background-color: #272a31;
+}
+.social-media {
+  width: 560px;
+}
+.social-media a,
+.social-media a i {
+  color: white;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+.img-container {
+  padding-top: 10px;
+  height: 40px;
+  width: 95px;
+}
+
+nav {
+  height: 60px;
+}
+.nav-links a,
+.compaign-btn {
+  text-decoration: none;
+  color: #272a31;
+  font-size: 13px;
+  font-weight: 600;
+}
+/* .nav-links a:first-of-type {
+  text-decoration: none;
+  color: #ec5242;
+  font-size: 13px;
+  font-weight: 600;
+} */
+.home a {
+  color: #ec5242 !important;
+}
+.compaign-btn {
+  text-decoration: none;
+  color: #ec5242;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.compaign-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ec5242 !important;
+  height: 30px;
+  width: 100px;
+}
+
+.main-header {
+  height: 100%;
+}
+.header {
+  /* The image used */
+  background: url("./images/unnamed.jpg");
+  opacity: 0.2;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  height: 300px;
+}
+.header > h1 {
+  height: 100px;
+  width: 500px;
+  font-size: 28px;
+  text-align: center;
+  padding: 50px;
+  margin-left: 100px;
+  color: #ec5242;
+  background: url("./images/global.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  background-image: url("./images/blur-background-1920x1200-spectrum-electromagnetic-4k-901.jpg");
+  opacity: 0.1;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.disc {
+  height: 600px;
+}
+@media (min-width: 768px) {
+  .top-nav {
+    display: none;
+  }
+}
