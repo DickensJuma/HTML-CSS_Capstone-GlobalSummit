@@ -71,7 +71,7 @@ nav {
 .header {
   /* The image used */
   background: url("./images/unnamed.jpg");
-  opacity: 0.2;
+  /* opacity: 0.2; */
   /* Full height */
   height: 100%;
 
@@ -91,7 +91,7 @@ nav {
   padding: 50px;
   margin-left: 100px;
   color: #ec5242;
-  background: url("./images/global.jpeg");
+  /* background: url("./images/global.jpeg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
