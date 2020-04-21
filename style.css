@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+<selector > :after {
+  content: none;
+}
+
 body {
-  background-color: #d3d3de;
+  background-color: #d3d3d3;
   height: 100%;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -11,9 +18,11 @@ header {
   height: 30px;
   background-color: #272a31;
 }
+
 .social-media {
   width: 560px;
 }
+
 .social-media a,
 .social-media a i {
   color: white;
@@ -24,15 +33,22 @@ header {
 .container-fluid {
   padding: 0 !important;
 }
+
 .img-container {
   padding-top: 10px;
+  height: 50px;
+  width: 120px;
+}
+
+.img-container > img {
   height: 40px;
-  width: 95px;
 }
 
 nav {
   height: 60px;
+  opacity: 0.9;
 }
+
 .nav-links a,
 .compaign-btn {
   text-decoration: none;
@@ -40,15 +56,11 @@ nav {
   font-size: 13px;
   font-weight: 600;
 }
-/* .nav-links a:first-of-type {
-  text-decoration: none;
-  color: #ec5242;
-  font-size: 13px;
-  font-weight: 600;
-} */
+
 .home a {
   color: #ec5242 !important;
 }
+
 .compaign-btn {
   text-decoration: none;
   color: #ec5242;
@@ -68,52 +80,149 @@ nav {
 .main-header {
   height: 100%;
 }
-.header {
-  /* The image used */
-  background: url("./images/unnamed.jpg");
-  /* opacity: 0.2; */
-  /* Full height */
-  height: 100%;
 
-  /* Center and scale the image nicely */
+.header {
+  background: url("./images/unnamed.jpg") rgba(255, 255, 255, 0.5);
+  height: 100%;
+  opacity: 0.1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
-  height: 300px;
+  height: 200px;
 }
+
 .header > h1 {
   height: 100px;
   width: 500px;
-  font-size: 28px;
+  font-size: 80px;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   margin-left: 100px;
   color: #ec5242;
-  /* background: url("./images/global.jpeg"); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  opacity: 0.5;
 }
 
 .welcome {
-  background-image: url("./images/blur-background-1920x1200-spectrum-electromagnetic-4k-901.jpg");
-  opacity: 0.1;
-  /* Full height */
+  background-image: url("./images/cover.png");
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .disc {
-  height: 600px;
+  height: 900px;
 }
-@media (min-width: 768px) {
-  .top-nav {
-    display: none;
-  }
+.text {
+  color: #ec5242;
+}
+
+.main-page {
+  background-image: url("./images/main-background.jpg");
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.project-title {
+  padding-bottom: 30px;
+}
+.project-title h2 {
+  text-align: center;
+  padding: 30px 0;
+  color: #ffffff;
+  width: 200px;
+}
+.speakers-title {
+  padding-bottom: 30px;
+}
+.speakers-title h2 {
+  text-align: center;
+  padding: 15px 0;
+  color: #272a31;
+  width: 200px;
+}
+
+.line {
+  height: 3px;
+  width: 30px;
+  border-top: 2px solid #ec5242;
+  text-align: center;
+}
+
+.whole {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.whole h4 {
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  color: #d3d3d3;
+}
+.card {
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  text-align: center;
+  color: white;
+}
+
+.main-programs {
+  margin: 0 300px;
+}
+
+.speaker {
+  background-color: #ffffff;
+}
+
+.card-width {
+  width: 200px;
+}
+
+.brand-container {
+  background-color: #272a31;
+}
+
+.brands a img {
+  height: 150px;
+  width: 200px;
+  color: #d3d3d3;
+}
+
+.brand-title h2 {
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
+  width: 200px;
+}
+.brands {
+  height: 200px;
+}
+.rights {
+  font-size: 14px;
+}
+footer {
+  background-color: #d3d3d3;
+}
+
+.footer-logo img {
+  height: 100px;
+  width: 200px;
+  margin-top: 50px;
+}
+
+.footer-links {
+  margin: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 10px;
+  color: #272a31;
 }
