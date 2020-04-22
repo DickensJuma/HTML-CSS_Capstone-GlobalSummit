@@ -222,8 +222,14 @@ footer {
 .footer-links a {
   text-decoration: none;
   margin-right: 10px;
-  font-size: 10px;
+  font-size: 12px;
   color: #272a31;
+}
+.footer-about-links a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #8a8484;
 }
 .about-header {
   background-color: #f2f2f2;
@@ -269,7 +275,7 @@ footer {
 }
 
 .info {
-  width: 600px;
+  /* width: 600px; */
   margin: auto;
 }
 
@@ -278,6 +284,7 @@ footer {
   width: 500px;
   border: 0.3px solid #b9b9bb;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .about-footer {
@@ -287,12 +294,13 @@ footer {
 
 .past-summits {
   border: 0.3px solid #e0e0e0;
-  width: 600px;
+  /* width: 800px; */
+  /* height: 300px; */
 }
 
 .past-img-1 {
   background-color: #d36652;
-  background-image: url("images/footer-logo.png");
+  background-image: url("images/france.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -301,9 +309,13 @@ footer {
 
 .past-img-2 {
   background-color: #d36652;
-  background-image: url("images/footer-logo.png");
+  background-image: url("images/australia.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.summit-img-container {
+  height: 200px;
+  width: 500px;
 }
