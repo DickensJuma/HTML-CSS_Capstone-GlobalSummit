@@ -319,3 +319,34 @@ footer {
   height: 200px;
   width: 500px;
 }
+.info-ticket {
+  border: 0.5px solid #6d6c6c;
+  border-radius: 30px;
+  width: 500px;
+  margin: auto;
+  height: 40px;
+}
+.tickets {
+  margin: auto;
+  /* padding: 1em; */
+  border: 8px solid transparent;
+  border-image: 16
+    repeating-linear-gradient(
+      -45deg,
+      red 0,
+      red 1em,
+      transparent 0,
+      transparent 2em,
+      #58a 0,
+      #58a 3em,
+      transparent 0,
+      transparent 4em
+    );
+
+  max-width: 70em;
+  font: 100%/1 Baskerville, Palatino, serif;
+}
+
+.table td {
+  text-align: center;
+}
