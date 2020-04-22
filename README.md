@@ -44,7 +44,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/globalsummit-screenshot.png)
+[![Product Name Screen Shot][product-screenshot]](images/screen-shot.png)
 
 This project is a capstone project and is part of the Microverse curriculum in HTML and CSS Solo Project!
 

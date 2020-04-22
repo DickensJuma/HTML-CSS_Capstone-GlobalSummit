@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 
-:after {
+::after {
   content: none;
 }
 
@@ -62,19 +62,16 @@ nav {
 }
 
 .compaign-btn {
-  text-decoration: none;
-  color: #ec5242;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.compaign-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 3px solid #ec5242 !important;
   height: 30px;
   width: 100px;
+  text-decoration: none;
+  color: #ec5242;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .main-header {
@@ -83,7 +80,6 @@ nav {
 
 .header {
   background: url("./images/unnamed.jpg") rgba(255, 255, 255, 0.5);
-  height: 100%;
   opacity: 0.1;
   background-position: center;
   background-repeat: no-repeat;
@@ -115,30 +111,34 @@ nav {
 .disc {
   height: 900px;
 }
+
 .text {
   color: #ec5242;
 }
 
 .main-page {
   background-image: url("./images/main-background.jpg");
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
 }
+
 .project-title {
   padding-bottom: 30px;
 }
+
 .project-title h2 {
   text-align: center;
   padding: 30px 0;
-  color: #ffffff;
+  color: #fff;
   width: 200px;
 }
+
 .speakers-title {
   padding-bottom: 30px;
 }
+
 .speakers-title h2 {
   text-align: center;
   padding: 15px 0;
@@ -159,11 +159,13 @@ nav {
   justify-content: center;
   margin-top: 30px;
 }
+
 .whole h4 {
   border-bottom: 2px solid #fff;
   text-align: center;
   color: #d3d3d3;
 }
+
 .card {
   height: 200px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -177,7 +179,7 @@ nav {
 }
 
 .speaker {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .card-width {
@@ -186,6 +188,12 @@ nav {
 
 .brand-container {
   background-color: #272a31;
+}
+
+.footer-logo img {
+  height: 100px;
+  width: 200px;
+  margin-top: 50px;
 }
 
 .brands a img {
@@ -197,48 +205,48 @@ nav {
 .brand-title h2 {
   text-align: center;
   padding: 15px 0;
-  color: #ffffff;
+  color: #fff;
   width: 200px;
 }
+
 .brands {
   height: 200px;
 }
+
 .rights {
   font-size: 14px;
 }
+
 footer {
   background-color: #d3d3d3;
-}
-
-.footer-logo img {
-  height: 100px;
-  width: 200px;
-  margin-top: 50px;
 }
 
 .footer-links {
   margin: 10px;
 }
+
 .footer-links a {
   text-decoration: none;
   margin-right: 10px;
   font-size: 12px;
   color: #272a31;
 }
+
 .footer-about-links a {
   text-decoration: none;
   margin-right: 10px;
   font-size: 12px;
   color: #8a8484;
 }
+
 .about-header {
   background-color: #f2f2f2;
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
 }
+
 .about-header p {
   text-transform: uppercase;
   font-size: 250%;
@@ -249,6 +257,7 @@ footer {
   width: 500px;
   margin-top: 30px;
 }
+
 .descriptions {
   height: 180px;
   width: 600px;
@@ -257,6 +266,7 @@ footer {
   padding-top: 10px;
   border: 0.3px solid #d3d3d3;
 }
+
 .descriptions p {
   color: #272a31;
   font-size: 14px;
@@ -268,14 +278,13 @@ footer {
 }
 
 .info-section {
-  /* height: 150px; */
+  margin-bottom: 30px;
   padding-top: 30px;
   background-color: #fff;
   border: 0.3px solid #e0e0e0;
 }
 
 .info {
-  /* width: 600px; */
   margin: auto;
 }
 
@@ -294,8 +303,6 @@ footer {
 
 .past-summits {
   border: 0.3px solid #e0e0e0;
-  /* width: 800px; */
-  /* height: 300px; */
 }
 
 .past-img-1 {
@@ -315,22 +322,25 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .summit-img-container {
   height: 200px;
   width: 500px;
 }
+
 .info-ticket {
   border: 0.5px solid #6d6c6c;
   border-radius: 30px;
   width: 500px;
-  margin: auto;
+  margin: 30px auto;
   height: 40px;
 }
+
 .tickets {
   margin: auto;
-  /* padding: 1em; */
   border: 8px solid transparent;
-  border-image: 16
+  border-image:
+    16
     repeating-linear-gradient(
       -45deg,
       red 0,
@@ -342,11 +352,38 @@ footer {
       transparent 0,
       transparent 4em
     );
-
   max-width: 70em;
-  font: 100%/1 Baskerville, Palatino, serif;
+  font: 100%/1 "Baskerville", Palatino, serif;
 }
 
 .table td {
   text-align: center;
+}
+
+.lunch-section {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  background-color: #fff;
+  border: 0.3px solid #e0e0e0;
+}
+
+.menu {
+  border: 0.3px solid #d6d4d4;
+  background-color: #fffdfd;
+  height: 150px;
+  margin-top: 30px;
+}
+
+.grey {
+  background-color: #f6f6f6;
+  height: 50px;
+}
+
+button {
+  background-color: #ec5242;
+  color: #d3d3d3;
+  height: 50px;
+  width: 180px;
+  margin: 50px 0;
+  border: none;
 }
