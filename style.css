@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 
-<selector > :after {
+:after {
   content: none;
 }
 
 body {
-  background-color: #d3d3d3;
+  background-color: #f2f2f2;
   height: 100%;
   font-family: "Lato", sans-serif;
 }
 
 header {
-  background-color: white;
+  background-color: #f2f2f2;
 }
 
 .top-nav {
@@ -121,7 +121,6 @@ nav {
 
 .main-page {
   background-image: url("./images/main-background.jpg");
-
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,4 +224,86 @@ footer {
   margin-right: 10px;
   font-size: 10px;
   color: #272a31;
+}
+.about-header {
+  background-color: #f2f2f2;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.about-header p {
+  text-transform: uppercase;
+  font-size: 250%;
+  color: #ec5242;
+  font-weight: 900;
+  text-align: center;
+  height: 100px;
+  width: 500px;
+  margin-top: 30px;
+}
+.descriptions {
+  height: 180px;
+  width: 600px;
+  background-color: #f7f7f7;
+  margin-top: 30px;
+  padding-top: 10px;
+  border: 0.3px solid #d3d3d3;
+}
+.descriptions p {
+  color: #272a31;
+  font-size: 14px;
+  text-transform: lowercase;
+  height: 50px;
+  width: 600px;
+  padding: 0;
+  margin: 0;
+}
+
+.info-section {
+  /* height: 150px; */
+  padding-top: 30px;
+  background-color: #fff;
+  border: 0.3px solid #e0e0e0;
+}
+
+.info {
+  width: 600px;
+  margin: auto;
+}
+
+.logo-section {
+  height: 170px;
+  width: 500px;
+  border: 0.3px solid #b9b9bb;
+  margin: auto;
+}
+
+.about-footer {
+  color: #b9b9bb;
+  background-color: #272a31;
+}
+
+.past-summits {
+  border: 0.3px solid #e0e0e0;
+  width: 600px;
+}
+
+.past-img-1 {
+  background-color: #d36652;
+  background-image: url("images/footer-logo.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.past-img-2 {
+  background-color: #d36652;
+  background-image: url("images/footer-logo.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
