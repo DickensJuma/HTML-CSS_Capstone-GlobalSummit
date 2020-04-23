@@ -74,21 +74,6 @@ nav {
   font-weight: 600;
 }
 
-.main-header {
-  height: 100%;
-}
-
-.header {
-  background: url("./images/unnamed.jpg") rgba(255, 255, 255, 0.5);
-  opacity: 0.1;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  height: 200px;
-}
-
 .header > h1 {
   height: 100px;
   width: 500px;
@@ -100,28 +85,13 @@ nav {
   opacity: 0.5;
 }
 
-.welcome {
-  background-image: url("./images/cover.png");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.disc {
-  height: 900px;
-}
-
-.text {
-  color: #ec5242;
-}
-
 .main-page {
   background-image: url("./images/main-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+  padding: 8pc 0;
 }
 
 .project-title {
@@ -175,7 +145,13 @@ nav {
 }
 
 .main-programs {
-  margin: 0 300px;
+  margin: auto;
+}
+
+.main-row {
+  display: flex;
+  justify-content: center;
+  margin: auto 40px;
 }
 
 .speaker {
@@ -194,6 +170,10 @@ nav {
   height: 100px;
   width: 200px;
   margin-top: 50px;
+}
+
+.top-section img {
+  vertical-align: middle;
 }
 
 .brands a img {
@@ -249,13 +229,11 @@ footer {
 
 .about-header p {
   text-transform: uppercase;
-  font-size: 250%;
+  font-size: 4rem;
   color: #ec5242;
-  font-weight: 900;
   text-align: center;
-  height: 100px;
-  width: 500px;
-  margin-top: 30px;
+  width: 700px;
+  margin-top: 10px;
 }
 
 .descriptions {
@@ -270,10 +248,9 @@ footer {
 .descriptions p {
   color: #272a31;
   font-size: 14px;
-  text-transform: lowercase;
   height: 50px;
   width: 600px;
-  padding: 0;
+  padding: 20px 5px;
   margin: 0;
 }
 
@@ -338,6 +315,8 @@ footer {
 
 .tickets {
   margin: auto;
+
+  /* padding: 1em; */
   border: 8px solid transparent;
   border-image:
     16
@@ -353,7 +332,7 @@ footer {
       transparent 4em
     );
   max-width: 70em;
-  font: 100%/1 "Baskerville", Palatino, serif;
+  font: 100%/1 Baskerville, Palatino, serif;
 }
 
 .table td {
@@ -386,4 +365,42 @@ button {
   width: 180px;
   margin: 50px 0;
   border: none;
+}
+
+.top-section {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  background-image: url("./images/summit-1.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.bg-text {
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.5); /* Black background with 0.7 opacity */
+
+  /* color: #f1f1f1; */
+  width: 100%;
+  height: 100%;
+  padding: 30px 10px 0 0;
+  box-shadow: 0 0 50px rgb(0, 0, 0) inset;
+}
+
+.bg-text h1 {
+  font-size: 7rem;
+  padding-left: 25px;
+  text-decoration: transparent;
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.bg-text h2 {
+  font-size: 3.8rem;
+  padding: 90px 30px 0 25px;
+  line-height: 1.8;
+  color: #ec5242;
 }

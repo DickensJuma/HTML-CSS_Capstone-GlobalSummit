@@ -98,6 +98,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgements
 
 - [Microverse](https://www.microverse.org/)
+- [CreativeCommons](https://creativecommons.org/licenses/by-nc/4.0/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
