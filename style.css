@@ -39,7 +39,9 @@ header {
   height: 50px;
   width: 120px;
 }
-
+.img-container > h3 > a {
+  color: #ec5242;
+}
 .img-container > img {
   height: 40px;
 }
@@ -96,6 +98,7 @@ nav {
 
 .project-title {
   padding-bottom: 30px;
+  margin-top: 60px;
 }
 
 .project-title h2 {
@@ -128,6 +131,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .whole h4 {
@@ -229,11 +233,10 @@ footer {
 
 .about-header p {
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.4rem;
   color: #ec5242;
   text-align: center;
-  width: 700px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .descriptions {
@@ -318,8 +321,7 @@ footer {
 
   /* padding: 1em; */
   border: 8px solid transparent;
-  border-image:
-    16
+  border-image: 16
     repeating-linear-gradient(
       -45deg,
       red 0,
