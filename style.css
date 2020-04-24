@@ -413,3 +413,44 @@ button {
   line-height: 1.8;
   color: #ec5242;
 }
+
+@media only screen and (max-width: 300px) {
+  .social-media,
+  .main {
+    display: none;
+  }
+
+  .compaign-btn {
+    margin-top: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .top-section,
+  .bg-text {
+    padding: 0;
+  }
+
+  .img-container h3,
+  .social-media,
+  .main {
+    display: none;
+  }
+
+  .speaker {
+    margin-top: 90px;
+  }
+
+  .main-page {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    padding: auto;
+  }
+
+  .past-summits {
+    padding: auto;
+  }
+}
