@@ -414,7 +414,7 @@ button {
   color: #ec5242;
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 364px) {
   .social-media,
   .main {
     display: none;
@@ -426,7 +426,7 @@ button {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .top-section,
   .bg-text {
     padding: 0;
