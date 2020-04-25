@@ -324,11 +324,8 @@ footer {
 
 .tickets {
   margin: auto;
-
-  /* padding: 1em; */
   border: 8px solid transparent;
-  border-image:
-    16
+  border-image: 16
     repeating-linear-gradient(
       -45deg,
       red 0,
@@ -391,30 +388,29 @@ button {
 .bg-text {
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(255, 255, 255, 0.5); /* Black background with 0.7 opacity */
-
-  /* color: #f1f1f1; */
+  background: rgba(255, 255, 255, 0.5); /* Black background with 0.5 opacity */
   width: 100%;
   height: 100%;
   padding: 30px 10px 0 0;
   box-shadow: 0 0 50px rgb(0, 0, 0) inset;
 }
 
-.bg-text h1 {
+.bg-text h2 {
   font-size: 7rem;
   padding-left: 25px;
+  padding-right: 100px;
   text-decoration: transparent;
   color: rgba(255, 0, 0, 0.6);
 }
 
-.bg-text h2 {
+.bg-text h1 {
   font-size: 3.8rem;
   padding: 90px 30px 0 25px;
   line-height: 1.8;
   color: #ec5242;
 }
 
-@media only screen and (max-width: 364px) {
+@media only screen and (max-width: 478px) {
   .social-media,
   .main {
     display: none;
@@ -424,7 +420,6 @@ button {
     margin-top: 20px;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .top-section,
