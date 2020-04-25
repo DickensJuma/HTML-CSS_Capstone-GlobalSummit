@@ -118,15 +118,18 @@ nav {
   color: #ec5242;
   opacity: 0.5;
 }
+
 .main > div > a {
   font-size: 16px;
   padding: auto;
 }
+
 .main-page {
   background-image: url("./images/main-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   /* height: 500px;
   padding: 8pc 0; */
 }
@@ -134,6 +137,7 @@ nav {
 .project-title {
   /* padding-bottom: 30px;
   margin-top: 60px; */
+
   /* height: 100%; */
 }
 
@@ -154,9 +158,11 @@ nav {
   color: #272a31;
   width: 200px;
 }
+
 .card-title {
   font-size: 18px;
 }
+
 .text {
   font-size: 16px;
   color: #ec5242;
@@ -173,6 +179,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+
   /* margin-top: 30px;
   margin-bottom: 30px; */
 }
@@ -184,7 +191,6 @@ nav {
 }
 
 .card {
-  /* height: 200px; */
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   text-align: center;
@@ -200,8 +206,10 @@ nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+
   /* grid-auto-rows: 200px; */
 }
+
 @media only screen and (max-width: 768px) {
   .main-row {
     grid-template-columns: repeat(2, 1fr);
@@ -355,7 +363,8 @@ footer {
 .tickets {
   margin: auto;
   border: 8px solid transparent;
-  border-image: 16
+  border-image:
+    16
     repeating-linear-gradient(
       -45deg,
       red 0,
