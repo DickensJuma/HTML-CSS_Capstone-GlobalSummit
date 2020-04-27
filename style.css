@@ -8,6 +8,7 @@ body {
   background-color: #f2f2f2;
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
+  width: 100%;
 }
 
 p {
@@ -55,8 +56,7 @@ header {
   width: 120px;
 }
 
-.nav-links a,
-.compaign-btn {
+.main a {
   text-decoration: none;
   color: #272a31;
   font-size: 14px;
@@ -112,21 +112,14 @@ nav {
   width: 100px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .compaign-container {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .compaign-container {
+@media only screen and (max-width: 700px) {
+  .main {
     display: none;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .main,
-  .navbar-toggler-icon {
+  .main {
     display: none;
   }
 }
@@ -134,6 +127,13 @@ nav {
 @media only screen and (max-width: 600px) {
   .main {
     display: none;
+  }
+
+  .footer-links,
+  .about-footer,
+  .footer-about-links {
+    flex-direction: column;
+    padding-bottom: 20px;
   }
 }
 
@@ -315,8 +315,6 @@ nav {
 }
 
 .descriptions {
-  /* height: 180px; */
-
   background-color: #f7f7f7;
   margin-top: 30px;
   padding-top: 10px;
@@ -388,8 +386,7 @@ nav {
 .tickets {
   margin: auto;
   border: 8px solid transparent;
-  border-image:
-    16
+  border-image: 16
     repeating-linear-gradient(
       -45deg,
       red 0,
@@ -479,7 +476,7 @@ button {
   }
 
   .bg-text h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding-left: 25px;
     text-decoration: transparent;
     color: rgba(255, 0, 0, 0.6);
@@ -493,12 +490,7 @@ button {
   }
 
   .social-media,
-  .main,
-  .compaign-btn,
-  .img-container h3,
-  .social-container,
-  .compaign-container,
-  .parent-container {
+  .main {
     display: none !important;
   }
 
@@ -579,16 +571,21 @@ button {
 
   .main-footer {
     padding: 10px 50px !important;
+    flex-direction: column;
   }
 
   .past-summits {
     padding: auto;
   }
+
+  .main {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .bg-text h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-left: 25px;
     text-decoration: transparent;
     color: rgba(255, 0, 0, 0.6);
@@ -601,13 +598,19 @@ button {
     color: #ec5242;
   }
 
-  .social-media,
-  .compaign-btn .main,
-  .img-container h3,
-  .social-container,
-  .compaign-container,
-  .parent-container {
-    display: none !important;
+  .main {
+    display: none;
+  }
+
+  .main-footer {
+    flex-direction: column;
+  }
+
+  .footer-links,
+  .about-footer,
+  .footer-about-links {
+    flex-direction: column;
+    padding-bottom: 20px;
   }
 }
 
@@ -663,5 +666,28 @@ button {
     color: #ec5242;
     text-align: center;
     margin-top: 10px;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .main-footer {
+    flex-direction: column;
+  }
+
+  .info-ticket {
+    border: 0.5px solid #6d6c6c;
+    border-radius: 30px;
+    width: 300px;
+    margin: 30px auto;
+    height: 50px;
+  }
+
+  .footer-links,
+  .about-footer,
+  .footer-about-links {
+    flex-direction: column;
+    padding-bottom: 20px;
   }
 }
