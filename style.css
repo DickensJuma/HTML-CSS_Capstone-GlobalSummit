@@ -6,7 +6,7 @@
 
 body {
   background-color: #f2f2f2;
-  height: 100%;
+  overflow-x: hidden;
   font-family: "Lato", sans-serif;
 }
 
@@ -259,7 +259,7 @@ nav {
   font-size: 16px;
 }
 
-footer {
+.main-footer {
   background-color: #d3d3d3;
 }
 
@@ -275,17 +275,29 @@ footer {
   height: 500px;
 }
 
-.about-header p {
+.about-header h1 {
   text-transform: uppercase;
-  font-size: 3.4rem;
+  font-size: 4.4rem;
   color: #ec5242;
   text-align: center;
   margin-top: 30px;
 }
 
+.about-header p {
+  font-size: 3.9rem;
+  color: #ec5242;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.join {
+  font-size: 1.4rem;
+  align-items: center;
+}
+
 .descriptions {
-  height: 180px;
-  width: 600px;
+  /* height: 180px; */
+  width: 70%;
   background-color: #f7f7f7;
   margin-top: 30px;
   padding-top: 10px;
@@ -295,10 +307,11 @@ footer {
 .descriptions p {
   color: #272a31;
   font-size: 14px;
-  height: 50px;
-  width: 600px;
-  padding: 20px 5px;
-  margin: 0;
+
+  /* height: 50px; */
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 10px;
 }
 
 .info-section {
@@ -396,10 +409,11 @@ footer {
   background-color: #fffdfd;
   height: 150px;
   margin-top: 30px;
+  padding: 0 !important;
 }
 
 .grey {
-  background-color: #f6f6f6;
+  background-color: #dfdfdf;
   height: 50px;
 }
 
@@ -449,6 +463,10 @@ button {
 }
 
 @media only screen and (max-width: 478px) {
+  body {
+    margin: 0 10px;
+  }
+
   .social-media,
   .compaign-btn .main {
     display: none;
@@ -456,6 +474,59 @@ button {
 
   .compaign-btn {
     margin-top: 20px;
+  }
+
+  .descriptions {
+    margin: 0 auto;
+
+    /* height: 300px; */
+    width: 100%;
+  }
+
+  .past-img-1,
+  .past-img-2 {
+    height: 90%;
+    margin: 0 10px;
+  }
+
+  .footer-links,
+  .about-footer,
+  .footer-about-links,
+  .brands {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .main-footer {
+    flex-direction: column;
+  }
+
+  .rights,
+  .info > p,
+  .hd > h2 {
+    text-align: center;
+  }
+
+  .logo-section {
+    width: 100%;
+  }
+
+  .brands {
+    height: 100%;
+  }
+
+  .brands a img {
+    height: 120px;
+    width: 140px;
+  }
+
+  .info-ticket {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu {
+    height: 90px;
   }
 }
 
@@ -477,7 +548,7 @@ button {
     margin-top: 90px !important;
   }
 
-  footer {
+  .main-footer {
     padding: 10px 50px !important;
   }
 
