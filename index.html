@@ -30,33 +30,24 @@
   </head>
   <body>
     <header class="container-fluid pt-3">
-      <div
-        class="social-container container-fluid top-nav d-lg-flex d-xl-flex d-sm-none d-xl-none justify-content-end align-items-center"
-      >
-        <div
-          class="social-media d-flex justify-content-start align-item-center"
-        >
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#">English</a>
-          <a href="">My Page</a>
-          <a href="">Logout</a>
-        </div>
+      <div class="social-media d-flex justify-content-end align-item-center">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#">English</a>
+        <a href="">My Page</a>
+        <a href="">Logout</a>
       </div>
 
-      <nav class="row d-flex shadow">
-        <div
-          class="parent-container col-4 d-lg-flex d-xl-flex d-sm-none d-md-none justify-content-center"
-        >
-          <div
-            class="img-container d-sm-none d-sm-none d-lg-flex d-xl-flex d-md-none"
-          >
+      <nav class="d-flex shadow">
+        <div class="parent-container col-4 justify-content-center">
+          <div class="img-container">
             <img src="./images/footer-logo.png" class="img-fluid" alt="" />
             <h3><a href="/index.html">Global Summit</a></h3>
           </div>
         </div>
+
         <div
-          class="main col-4 d-lg-flex d-xl-flex d-sm-none d-xl-none justify-content-between align-items-center nav-links"
+          class="main col-4 d-flex justify-content-between align-items-center nav-links"
         >
           <div class="home">
             <a href="./index.html">Home</a>
@@ -65,7 +56,7 @@
             <a href="./ticket.html">Program</a>
           </div>
           <div class="">
-            <a href="./ticket.html">Join</a>
+            <a href="./ticket.html">Ticket</a>
           </div>
 
           <div class="">
@@ -75,15 +66,16 @@
           <div class="">
             <a href="./about.html">About</a>
           </div>
+
+          <div
+            class="compaign-container col-4 justify-content-start align-items-center"
+          >
+            <a href="./ticket.html">Campaign</a>
+          </div>
         </div>
 
-        <div
-          class="compaign-container col-4 d-lg-flex d-xl-flex d-sm-none d-xl-none justify-content-start align-items-center"
-        >
-          <a href="./ticket.html" class="compaign-btn">CC Campaign</a>
-        </div>
         <span
-          class="navbar-toggler-icon d-lg-none d-md-flex d-sm-flex d-xl-none mx-4"
+          class="navbar-toggler-icon d-lg-none d-flex d-md-none d-sm-none d-xl-none mx-4"
         >
           <i
             class="fa fa-navicon"
@@ -108,9 +100,51 @@
         <div class="line"></div>
       </div>
 
-      <div class="main-programs">
+      <div class="service-container">
+        <div class="service-item">
+          <img src="./images/lecture.png" alt="" />
+          <h5 class="card-title">Lecture</h5>
+          <p class="card-text">
+            Listen to speakers form different countries about the message of
+            sharing and openness
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="./images/exhibition.png" alt="" />
+          <h5 class="card-title">CC Ehibition</h5>
+          <p class="card-text">
+            Appriciate various creations apply CC lincess for artista
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="./images/forum.png" alt="" />
+          <h5 class="card-title">Forum</h5>
+          <p class="card-text">
+            With supporting text below as a natural lead-in to additional
+            content.
+          </p>
+        </div>
+        <div class="service-item">
+          <img src="./images/workshop.png" alt="" />
+          <h5 class="card-title">Workshop</h5>
+          <p class="card-text">
+            With supporting text below as a natural lead-in to additional
+            content.
+          </p>
+          <!-- <div class="service-item">
+            <img src="./images/ignite.png" alt="" />
+            <h5 class="card-title">CC Ignite</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- <div class="main-programs">
         <div class="main-row">
-          <div class="col m-1 p-0">
+          <div class="col col-sm-12 m-1 p-0">
             <div class="card">
               <div class="card-body">
                 <img src="./images/lecture.png" alt="" />
@@ -122,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div class="col m-1 p-0">
+          <div class="col col-xm-12 m-1 p-0">
             <div class="card">
               <div class="card-body">
                 <img src="./images/exhibition.png" alt="" />
@@ -133,7 +167,7 @@
               </div>
             </div>
           </div>
-          <div class="col m-1 p-0">
+          <div class="col col-xm-12 m-1 p-0">
             <div class="card">
               <div class="card-body">
                 <img src="./images/forum.png" alt="" />
@@ -145,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class="col m-1 p-0">
+          <div class="col col-xm-12 m-1 p-0">
             <div class="card">
               <div class="card-body">
                 <img src="./images/workshop.png" alt="" />
@@ -157,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="col m-1 p-0">
+          <div class="col col-xm-12 m-1 p-0">
             <div class="card">
               <div class="card-body">
                 <img src="./images/ignite.png" alt="" />
@@ -170,7 +204,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="whole d-flex justify-content-center">
         <h4>SEE THE WHOLE PROJECT</h4>
       </div>
@@ -337,13 +371,21 @@
         <div class="line"></div>
       </div>
 
-      <div class="brands d-flex justify-content-center align-items-center">
-        <a href="#"><img src="./images/abc.png" alt="" /></a>
-        <a href="#"><img src="./images/adidas.png" alt="" /></a>
-        <a href="#"><img src="./images/bmw.png" alt="" /></a>
-        <a href="#"><img src="./images/mobil.png" alt="" /></a>
-        <a href="#"><img src="./images/ferrari.png" alt="" /></a>
-        <a href="#"><img src="./images/nike.png" alt="" /></a>
+      <div class="partner-container">
+        <div class="partner-item">
+          <a href="#"
+            ><img class="img-fluid" src="./images/adidas.png" alt=""
+          /></a>
+        </div>
+        <div class="partner-item">
+          <a href="#"><img src="./images/bmw.png" alt="" /></a>
+        </div>
+        <div class="partner-item">
+          <a href="#"><img src="./images/mobil.png" alt="" /></a>
+        </div>
+        <div class="partner-item">
+          <a href="#"><img src="./images/nike.png" alt="" /></a>
+        </div>
       </div>
     </section>
 

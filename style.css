@@ -28,7 +28,8 @@ header {
 }
 
 .social-media {
-  width: 560px;
+  padding-right: 30px;
+  background-color: #272a31;
 }
 
 .social-media a,
@@ -47,6 +48,8 @@ header {
 }
 
 .img-container {
+  display: flex;
+  flex-direction: row;
   padding-top: 10px;
   height: 50px;
   width: 120px;
@@ -82,6 +85,11 @@ header {
   color: #8a8484;
 }
 
+.compaign-container a {
+  color: #ec5242;
+  font-size: 14px;
+}
+
 .img-container > h3 > a {
   color: #ec5242;
 }
@@ -95,26 +103,44 @@ nav {
   opacity: 0.9;
 }
 
-.compaign-btn {
+.compaign-container {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 3px solid #ec5242 !important;
   height: 30px;
   width: 100px;
-  text-decoration: none;
-  color: #ec5242;
-  font-size: 13px;
-  font-weight: 600;
 }
 
-.header > h1 {
-  height: 100px;
-  width: 500px;
+@media only screen and (max-width: 1024px) {
+  .compaign-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .compaign-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main,
+  .navbar-toggler-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    display: none;
+  }
+}
+
+.top-section > h1 {
   font-size: 80px;
   text-align: center;
-  padding: 30px;
-  margin-left: 100px;
+  padding: 30px 30px;
   color: #ec5242;
   opacity: 0.5;
 }
@@ -129,16 +155,6 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* height: 500px;
-  padding: 8pc 0; */
-}
-
-.project-title {
-  /* padding-bottom: 30px;
-  margin-top: 60px; */
-
-  /* height: 100%; */
 }
 
 .project-title h2 {
@@ -190,11 +206,25 @@ nav {
   color: #d3d3d3;
 }
 
-.card {
+.service-item {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* margin: 10px 5px; */
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 5px;
+  margin: 10px 20px;
 }
 
 .main-programs {
@@ -231,17 +261,11 @@ nav {
 .footer-logo img {
   height: 100px;
   width: 200px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .top-section img {
   vertical-align: middle;
-}
-
-.brands a img {
-  height: 150px;
-  width: 200px;
-  color: #d3d3d3;
 }
 
 .brand-title h2 {
@@ -249,10 +273,6 @@ nav {
   padding: 15px 0;
   color: #fff;
   width: 200px;
-}
-
-.brands {
-  height: 200px;
 }
 
 .rights {
@@ -272,7 +292,6 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
 }
 
 .about-header h1 {
@@ -297,7 +316,7 @@ nav {
 
 .descriptions {
   /* height: 180px; */
-  width: 70%;
+
   background-color: #f7f7f7;
   margin-top: 30px;
   padding-top: 10px;
@@ -307,9 +326,6 @@ nav {
 .descriptions p {
   color: #272a31;
   font-size: 14px;
-
-  /* height: 50px; */
-  width: 100%;
   padding: 10px 10px;
   margin: 10px 10px;
 }
@@ -319,10 +335,6 @@ nav {
   padding-top: 30px;
   background-color: #fff;
   border: 0.3px solid #e0e0e0;
-}
-
-.info {
-  margin: auto;
 }
 
 .logo-section {
@@ -435,7 +447,6 @@ button {
   background-repeat: no-repeat;
   max-width: 100%;
   margin: 0 auto;
-  height: 600px;
 }
 
 .bg-text {
@@ -467,13 +478,28 @@ button {
     margin: 0 10px;
   }
 
-  .social-media,
-  .compaign-btn .main {
-    display: none;
+  .bg-text h2 {
+    font-size: 4rem;
+    padding-left: 25px;
+    text-decoration: transparent;
+    color: rgba(255, 0, 0, 0.6);
   }
 
-  .compaign-btn {
-    margin-top: 20px;
+  .bg-text h1 {
+    font-size: 2.2rem;
+    padding: 90px 30px 0 25px;
+    line-height: 1.8;
+    color: #ec5242;
+  }
+
+  .social-media,
+  .main,
+  .compaign-btn,
+  .img-container h3,
+  .social-container,
+  .compaign-container,
+  .parent-container {
+    display: none !important;
   }
 
   .descriptions {
@@ -491,8 +517,7 @@ button {
 
   .footer-links,
   .about-footer,
-  .footer-about-links,
-  .brands {
+  .footer-about-links {
     flex-direction: column;
     padding-bottom: 20px;
   }
@@ -511,17 +536,7 @@ button {
     width: 100%;
   }
 
-  .brands {
-    height: 100%;
-  }
-
-  .brands a img {
-    height: 120px;
-    width: 140px;
-  }
-
   .info-ticket {
-    width: 100%;
     text-align: center;
   }
 
@@ -531,17 +546,31 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
+  .bg-text h2 {
+    font-size: 5rem;
+    padding-left: 25px;
+    text-decoration: transparent;
+    color: rgba(255, 0, 0, 0.6);
+  }
+
+  .bg-text h1 {
+    font-size: 2.6rem;
+    padding: 90px 30px 0 25px;
+    line-height: 1.8;
+    color: #ec5242;
+  }
+
+  .about-header h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #ec5242;
+    text-align: center;
+    margin-top: 20px;
+  }
+
   .top-section,
   .bg-text {
     padding: 0;
-  }
-
-  .img-container h3,
-  .social-container,
-  .compaign-container,
-  .main,
-  .parent-container {
-    display: none !important;
   }
 
   .speaker {
@@ -554,5 +583,85 @@ button {
 
   .past-summits {
     padding: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-text h2 {
+    font-size: 5rem;
+    padding-left: 25px;
+    text-decoration: transparent;
+    color: rgba(255, 0, 0, 0.6);
+  }
+
+  .bg-text h1 {
+    font-size: 2.4rem;
+    padding: 90px 30px 0 25px;
+    line-height: 1.8;
+    color: #ec5242;
+  }
+
+  .social-media,
+  .compaign-btn .main,
+  .img-container h3,
+  .social-container,
+  .compaign-container,
+  .parent-container {
+    display: none !important;
+  }
+}
+
+.partner-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 5px;
+}
+
+.partner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .partner-container,
+  .service-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-header h1 {
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .partner-container,
+  .service-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .partner-container,
+  .service-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .partner-container,
+  .service-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-header h1 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #ec5242;
+    text-align: center;
+    margin-top: 10px;
   }
 }
