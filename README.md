@@ -44,7 +44,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/screen-shot.png)
+[![Product Name Screen Shot][product-screenshot]](images/global-summit-screenshot.png)
 
 This project is a capstone project and is part of the Microverse curriculum in HTML and CSS Solo Project!
 
@@ -111,7 +111,7 @@ Give a ⭐️ if you like this project!
 [stars-url]: https://github.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit/stargazers
 [issues-shield]: https://img.shields.io/github/issues/DickensJuma/HTML-CSS_Capstone-GlobalSummit.svg?style=flat-square
 [issues-url]: https://github.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit/issues
-[product-screenshot]: images/newsweek-screenshot.png
+[product-screenshot]: images/global-summit-screenshot.png
 
 ## 📝 License
 
