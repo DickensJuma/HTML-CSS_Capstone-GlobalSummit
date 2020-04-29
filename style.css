@@ -114,7 +114,8 @@ body {
   font-size: 5rem;
   padding: 10px 10px;
   text-decoration: transparent;
-  color: rgba(255, 0, 0, 0.6);
+  color: #ec5242;
+  opacity: 0.9;
 }
 
 .desc h1 {
@@ -150,6 +151,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
   /* width: 100%; */
 }
 
@@ -190,6 +192,7 @@ body {
   grid-auto-rows: auto;
   gap: 5px;
   padding: 10px 20px;
+
   /* width: 100%; */
 }
 
@@ -199,6 +202,7 @@ body {
   grid-auto-rows: auto;
   gap: 20px;
   padding: 10px 20px;
+
   /* width: 100%; */
 }
 
@@ -237,6 +241,7 @@ body {
   background-color: #fff;
   align-items: center;
   height: 60px;
+
   /* width: 100%; */
   border: 1px solid #d3d3d3;
   font-size: 18px;
@@ -338,15 +343,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .feature-speakers {
-    /* width: 100%; */
-  }
-
   .project-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     gap: 20px;
+
     /* width: 100%; */
   }
 
@@ -376,9 +378,6 @@ body {
 
   .service-item {
     flex-direction: row;
-  }
-  .feature-speakers {
-    /* width: 100%; */
   }
 }
 
@@ -438,7 +437,6 @@ body {
     flex-direction: row;
     justify-content: start;
     background: rgba(216, 211, 211, 0.3);
-    height: 100px;
   }
 
   .top-nav,
