@@ -315,6 +315,14 @@ body {
   background-color: #d3d3d3;
 }
 
+.footer-tickect-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d6c6c;
+  color: #d3d3d3;
+}
+
 .footer-logo {
   margin-top: 30px;
 }
@@ -330,10 +338,102 @@ body {
   margin: 30px 0;
 }
 
+.info-container,
+.info-ticket,
+.info-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info-ticket {
+  border: 0.5px solid #6d6c6c;
+  border-radius: 30px;
+  width: 40%;
+  margin: 30px auto;
+  height: 40px;
+}
+
+.tickets {
+  margin: auto;
+  border: 8px solid transparent;
+  border-image: 16
+    repeating-linear-gradient(
+      -45deg,
+      red 0,
+      red 1em,
+      transparent 0,
+      transparent 2em,
+      #58a 0,
+      #58a 3em,
+      transparent 0,
+      transparent 4em
+    );
+  max-width: 70em;
+  font: 100%/1 "Lato", sans-serif;
+}
+
+.lunch-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border: 0.3px solid #d6d4d4;
+  background-color: #fffdfd;
+  margin-top: 30px;
+  width: 50%;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+
+button {
+  background-color: #ec5242;
+  color: #d3d3d3;
+  height: 50px;
+  width: 180px;
+  margin: 50px 0;
+  border: none;
+}
+
+.step {
+  margin: auto;
+}
+
+.none {
+  display: none;
+}
+
+.grey {
+  background-color: #d41e1e;
+  height: 40px;
+  width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
   .partner-container,
   .service-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .info-ticket {
+    width: 70%;
   }
 }
 
@@ -348,8 +448,6 @@ body {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     gap: 20px;
-
-    /* width: 100%; */
   }
 
   .service-item {
@@ -392,6 +490,10 @@ body {
   .compaign-btn {
     display: none;
   }
+
+  .menu {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -421,6 +523,11 @@ body {
   .more {
     display: flex;
   }
+
+  .info-ticket {
+    height: 60px;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 468px) {
@@ -437,6 +544,7 @@ body {
     flex-direction: row;
     justify-content: start;
     background: rgba(216, 211, 211, 0.3);
+    padding: 30px 0;
   }
 
   .top-nav,
@@ -457,6 +565,7 @@ body {
     width: 100%;
     flex-direction: row;
     justify-content: start;
+    padding: 30px 0;
   }
 
   .top-nav,
@@ -469,5 +578,8 @@ body {
   .navbar-toggler-icon {
     display: flex;
     padding-left: 8px;
+  }
+  .info-ticket {
+    width: 100%;
   }
 }

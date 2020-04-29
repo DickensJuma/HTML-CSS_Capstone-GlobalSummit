@@ -19,7 +19,7 @@
     <a href="https://github.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://raw.githack.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit/feature/index.html">View Demo</a>
+    <a href="https://raw.githack.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit/final/index.html">View Demo</a>
     ·
     <a href="https://github.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit/issues">Report Bug</a>
     ·
@@ -76,7 +76,7 @@ This project was built using these technologies.
 
 ## Live version
 
-You can see it working [here](https://raw.githack.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit/feature/index.html)
+You can see it working [here](https://raw.githack.com/DickensJuma/HTML-CSS_Capstone-GlobalSummit/final/index.html)
 
 <!-- CONTACT -->
 
