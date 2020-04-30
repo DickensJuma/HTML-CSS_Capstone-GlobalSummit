@@ -106,6 +106,12 @@ body {
   background-size: cover;
 }
 
+.fa-navicon {
+  color: #272a31;
+  font-size: 32px;
+  width: 38px;
+}
+
 .desc {
   max-width: 60rem;
   display: flex;
@@ -160,6 +166,7 @@ body {
   width: 32px;
   border-top: 2px solid #ec5242;
   text-align: center;
+  margin: 15px auto;
 }
 
 .lines {
@@ -171,7 +178,9 @@ body {
 }
 
 .info p {
-  padding: 20px 0;
+  padding: 20px 10px;
+  text-align: center;
+  color: #6d6c6c;
 }
 
 .service-item {
@@ -246,7 +255,13 @@ body {
 }
 
 .join {
-  margin-top: 20px;
+  margin: 20px 5px;
+  text-align: center;
+}
+
+.join h4 {
+  text-decoration: underline;
+  margin: 10px auto;
 }
 
 .join-none h4 {
@@ -363,7 +378,8 @@ body {
   width: 40%;
   border: 0.3px solid #b9b9bb;
   margin-bottom: 30px;
-  padding: 30px 30px;
+
+  /* padding: 30px 30px; */
 }
 
 .about-header h1 {
@@ -378,7 +394,7 @@ body {
   font-size: 0.9rem;
   color: #6d6c6c;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px 5px 0 5px;
 }
 
 .footer-container,
@@ -393,8 +409,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2e2e2e;
-  color: #d3d3d3;
+  background-color: #d3d3d3;
+  color: #2e2e2e;
+  width: 100%;
 }
 
 .footer-logo {
@@ -402,12 +419,14 @@ body {
 }
 
 .rights {
-  margin: 30px 0;
+  margin: 20px 0;
+  width: auto;
+  height: auto;
 }
 
 .descriptions {
   background-color: #f7f7f7;
-  margin-top: 30px;
+  margin: 0 5px 20px 5px;
   padding-top: 10px;
   border: 0.3px solid #d3d3d3;
 }
@@ -436,8 +455,14 @@ body {
   flex-direction: column;
 }
 
+.info-text h2 {
+  text-align: center;
+  color: #272a31;
+  font-size: 18px;
+}
+
 .info-section {
-  margin-top: 60px;
+  margin: 60px 5px;
 }
 
 .info-ticket {
@@ -451,8 +476,7 @@ body {
 .tickets {
   margin: auto;
   border: 8px solid transparent;
-  border-image:
-    16
+  border-image: 16
     repeating-linear-gradient(
       -45deg,
       red 0,
@@ -523,7 +547,7 @@ button {
 }
 
 .info {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -583,6 +607,15 @@ button {
 
   .service-item {
     flex-direction: row;
+  }
+
+  .logo-section {
+    padding: 10px auto;
+  }
+
+  .past-desc-container {
+    height: 200px;
+    margin: 0 10px;
   }
 }
 
