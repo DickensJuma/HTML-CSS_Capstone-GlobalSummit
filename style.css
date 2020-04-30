@@ -204,8 +204,7 @@ body {
   grid-auto-rows: auto;
   gap: 5px;
   padding: 10px 20px;
-
-  /* width: 100%; */
+  margin: 5px 10px;
 }
 
 .project-container {
@@ -214,8 +213,6 @@ body {
   grid-auto-rows: auto;
   gap: 20px;
   padding: 10px 20px;
-
-  /* width: 100%; */
 }
 
 .card-title {
@@ -297,7 +294,7 @@ body {
 
 .speaker-desc p {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 .brand-container,
@@ -382,8 +379,6 @@ body {
   width: 40%;
   border: 0.3px solid #b9b9bb;
   margin-bottom: 30px;
-
-  /* padding: 30px 30px; */
 }
 
 .about-header h1 {
@@ -399,6 +394,7 @@ body {
   color: #6d6c6c;
   text-align: center;
   margin: 30px 5px 0 5px;
+  line-height: 24px;
 }
 
 .footer-container,
@@ -440,6 +436,7 @@ body {
   font-size: 14px;
   padding: 10px 10px;
   margin: 10px 10px;
+  line-height: 24px;
 }
 
 .info-container,
@@ -480,7 +477,8 @@ body {
 .tickets {
   margin: auto;
   border: 8px solid transparent;
-  border-image: 16
+  border-image:
+    16
     repeating-linear-gradient(
       -45deg,
       red 0,
@@ -589,6 +587,7 @@ button {
     flex-direction: row;
     text-align: start;
     justify-content: space-between;
+    margin: 10px 0;
   }
 
   .service-item h5,
@@ -607,6 +606,7 @@ button {
   .partner-container,
   .service-container {
     grid-template-columns: 1fr;
+    grid-auto-rows: 140px;
   }
 
   .service-item {
