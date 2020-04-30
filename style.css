@@ -146,15 +146,6 @@ body {
   color: #fff;
 }
 
-.feature-speakers {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  /* width: 100%; */
-}
-
 .feature-title h2 {
   text-align: center;
   padding: 30px 0;
@@ -173,6 +164,9 @@ body {
   border-top: 2px solid #d3d3d3;
   text-align: center;
   margin: 5px 0;
+}
+.info p {
+  padding: 20px 0;
 }
 
 .service-item {
@@ -241,11 +235,12 @@ body {
   background-color: #fff;
   align-items: center;
   height: 60px;
-
-  /* width: 100%; */
   border: 1px solid #d3d3d3;
   font-size: 18px;
   font-weight: 400;
+}
+.join {
+  margin-top: 20px;
 }
 
 .join-none h4 {
@@ -307,6 +302,79 @@ body {
   align-items: center;
 }
 
+.past-summits {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-auto-rows: 200px;
+  gap: 10px;
+  width: 100%;
+}
+
+.berlin {
+  background-color: #d36652;
+  background-image: url("images/france.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.past-desc-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #d3d3d3;
+  font-size: 18px;
+  margin: auto;
+}
+
+.past-desc-container h1 {
+  font-size: 21px;
+  font-weight: 600;
+}
+.past-desc-container p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.australia {
+  background-color: #d36652;
+  background-image: url("images/australia.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  border: 0.3px solid #b9b9bb;
+  margin-bottom: 30px;
+  padding: 30px 30px;
+}
+
+.logo-section img {
+  height: auto;
+}
+.about-header h1 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #6d6d6d;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-header p {
+  font-size: 0.9rem;
+  color: #6d6c6c;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .footer-container,
 .footer-link {
   display: flex;
@@ -319,7 +387,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6d6c6c;
+  background-color: #2e2e2e;
   color: #d3d3d3;
 }
 
@@ -327,24 +395,42 @@ body {
   margin-top: 30px;
 }
 
-.policy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .rights {
   margin: 30px 0;
 }
 
+.descriptions {
+  background-color: #f7f7f7;
+  margin-top: 30px;
+  padding-top: 10px;
+  border: 0.3px solid #d3d3d3;
+}
+
+.descriptions p {
+  color: #272a31;
+  font-size: 14px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
 .info-container,
 .info-ticket,
-.info-desc {
+.info-desc,
+.about-header,
+.join,
+.info,
+.main-abt,
+.feature-speakers,
+.policy,
+.info-section,
+.info-text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.info-section {
+  margin-top: 60px;
 }
 .info-ticket {
   border: 0.5px solid #6d6c6c;
@@ -386,6 +472,7 @@ table {
 th {
   height: 50px;
 }
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -426,6 +513,9 @@ button {
   width: 100%;
 }
 
+.info {
+  margin: 20px 0;
+}
 @media only screen and (max-width: 1024px) {
   .partner-container,
   .service-container {
@@ -443,6 +533,12 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .past-summits {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 20px;
+    height: auto;
+  }
   .project-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -450,6 +546,9 @@ button {
     gap: 20px;
   }
 
+  /* .logo-section img {
+    height: 100px;
+  } */
   .service-item {
     flex-direction: row;
     text-align: start;
@@ -579,6 +678,7 @@ button {
     display: flex;
     padding-left: 8px;
   }
+
   .info-ticket {
     width: 100%;
   }
