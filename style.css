@@ -112,6 +112,10 @@ body {
   width: 38px;
 }
 
+.fa-angle-down {
+  color: #d41e1e;
+}
+
 .desc {
   max-width: 60rem;
   display: flex;
