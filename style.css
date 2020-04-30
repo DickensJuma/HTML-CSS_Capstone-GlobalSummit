@@ -90,6 +90,10 @@ body {
   width: 200px;
 }
 
+.logo-section img {
+  height: auto;
+}
+
 .logo > a > img {
   height: 50px;
 }
@@ -165,6 +169,7 @@ body {
   text-align: center;
   margin: 5px 0;
 }
+
 .info p {
   padding: 20px 0;
 }
@@ -239,6 +244,7 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
+
 .join {
   margin-top: 20px;
 }
@@ -319,6 +325,7 @@ body {
   background-size: cover;
   display: flex;
 }
+
 .past-desc-container {
   display: flex;
   justify-content: center;
@@ -332,10 +339,12 @@ body {
   font-size: 21px;
   font-weight: 600;
 }
+
 .past-desc-container p {
   font-size: 18px;
   font-weight: 600;
 }
+
 .australia {
   background-color: #d36652;
   background-image: url("images/australia.jpeg");
@@ -357,9 +366,6 @@ body {
   padding: 30px 30px;
 }
 
-.logo-section img {
-  height: auto;
-}
 .about-header h1 {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -429,9 +435,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .info-section {
   margin-top: 60px;
 }
+
 .info-ticket {
   border: 0.5px solid #6d6c6c;
   border-radius: 30px;
@@ -443,7 +451,8 @@ body {
 .tickets {
   margin: auto;
   border: 8px solid transparent;
-  border-image: 16
+  border-image:
+    16
     repeating-linear-gradient(
       -45deg,
       red 0,
@@ -516,6 +525,7 @@ button {
 .info {
   margin: 20px 0;
 }
+
 @media only screen and (max-width: 1024px) {
   .partner-container,
   .service-container {
@@ -539,6 +549,7 @@ button {
     gap: 20px;
     height: auto;
   }
+
   .project-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -546,9 +557,6 @@ button {
     gap: 20px;
   }
 
-  /* .logo-section img {
-    height: 100px;
-  } */
   .service-item {
     flex-direction: row;
     text-align: start;
