@@ -142,8 +142,12 @@ nav {
 .intro-p {
   border: 2px solid rgb(255, 255, 255);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  font-size: 1vw;
+  font-size: 1.5vw;
+  color: #797676;
+  font-weight: 400;
   background-color: #ddd;
+  width: 70%;
+  padding: 10px 10px;
 }
