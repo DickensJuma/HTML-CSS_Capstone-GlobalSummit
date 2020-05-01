@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+html,
 body {
+  height: 100%;
   font-family: "Lato", sans-serif;
 }
 nav {
+  z-index: 900;
   position: fixed;
   width: 100%;
 }
+
+.main-cover .blur {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
 .spacing {
   padding: 0 7%;
 }
@@ -71,7 +82,7 @@ nav {
 }
 .overall-content {
   height: 900px;
-  background-color: blue;
+  /* background-color: blue; */
   padding-top: 100px;
 }
 @media only screen and (max-width: 992px) {
@@ -103,7 +114,11 @@ nav {
   }
 }
 .main-cover {
-  padding-top: 72px;
+  position: absolute;
+  z-index: 1;
+  top: 2%;
+  width: 100%;
+  /* padding-top: 72px; */
   height: 700px;
   background-image: url("./images/summit-1.jpg");
   background-size: cover;
@@ -123,19 +138,19 @@ nav {
   );
 }
 .desc {
-  padding-top: 90px;
+  padding-top: 190px;
 }
 .desc > h3 {
   color: #ee4e1e;
   font-weight: 500;
-  line-height: 1.7rem;
+  line-height: 24px;
   font-size: 3vw;
 }
 .desc > h2 {
   display: flex;
   flex-wrap: wrap;
   font-weight: 1000;
-  font-size: 7vw;
+  font-size: 6vw;
   color: #ee4e1e;
 }
 
@@ -144,10 +159,45 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 1.5vw;
-  color: #797676;
-  font-weight: 400;
   background-color: #ddd;
   width: 70%;
   padding: 10px 10px;
+}
+
+.intro-p p {
+  font-weight: 400;
+  font-size: 1.9vw;
+  color: #797676;
+}
+@media only screen and (max-width: 992px) {
+  .desc{
+    padding-top: 120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro-p {
+    width: 100%;
+  }
+  .intro-p p {
+    font-size: 3vw;
+    margin-bottom: 2px;
+  }
+  /* .desc h3 {
+    margin: 20px 0 0 0;
+    font-size: 8vw;
+  }
+
+  .desc h2 {
+    font-size: 7vw;
+  } */
+}
+
+@media only screen and (max-width: 576px) {
+  .desc h3 {
+    font-size: 8vw;
+  }
+
+  .desc h2 {
+    font-size: 9vw;
+  }
 }
