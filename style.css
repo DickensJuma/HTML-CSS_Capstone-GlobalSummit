@@ -259,11 +259,9 @@ nav {
   border: 2px solid #fff;
 }
 
-/* .program :hover,
-.program-img:hover,
-.program-desc:hover {
-  border: 1px solid transparent;
-} */
+.none {
+  display: none;
+}
 .program-desc {
   display: flex;
   justify-content: center;
@@ -450,20 +448,30 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .partner-grid > a > img {
   height: 100px;
   width: 150px;
 }
-.more {
-  background-color: #ddd;
+.load-more {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dad6d6;
+  background-color: rgb(255, 255, 255);
   width: 87vw;
   text-align: center;
   color: #333;
-  height: 18px;
+  height: 45px;
   margin: 20px;
   display: none;
+}
+
+.gray-line {
+  background-color: #b4b2b2;
+  height: 3px;
+  width: 20px;
 }
 
 .fa-angle-down {
@@ -484,16 +492,17 @@ nav {
     grid-auto-rows: auto;
     gap: 10px;
   }
+  .about-desc h1 {
+    font-size: 16.5vw;
+  }
 }
 
-@media only screen and (max-width: 576px) {
-}
 @media only screen and (max-width: 400px) {
   .partners-container {
     display: none;
   }
-  .more {
-    display: block;
+  .load-more {
+    display: flex;
   }
 }
 
@@ -504,8 +513,191 @@ nav {
   margin-top: 30px;
 }
 
+.footer-about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: #2e2e2e;
+  color: #ddd;
+}
+
 @media only screen and (max-width: 400px) {
   .footer-container {
     display: none;
+  }
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10pc;
+  background-color: #f7f7f7;
+}
+.about-desc {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.about-desc h1 {
+  text-align: center;
+  color: #ee4e1e;
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-size: 3.5vw;
+}
+
+.about-desc p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #888484;
+  background-color: #fff;
+  height: 100%;
+  width: 70%;
+  padding: 20px;
+  color: #818181;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.join a {
+  text-decoration: underline;
+  color: #666565;
+  font-weight: 900;
+}
+@media only screen and (max-width: 400px) {
+  .about-container {
+    padding-top: 4pc;
+  }
+  .about-desc p {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.info-text h2,
+.info h2 {
+  font-weight: 900;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.info {
+  width: 60%;
+}
+.info-text p {
+  text-align: center;
+  margin: 20px;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  border: 1px solid #b4b2b2;
+}
+
+.logo-section img {
+  width: 100%;
+  height: 150px;
+}
+@media only screen and (max-width: 400px) {
+  .info {
+    width: 90%;
+  }
+  .logo-section {
+    margin: 0;
+  }
+  .logo-section img {
+    height: 100px;
+  }
+  
+}
+
+.main-about-container,
+.info,
+.past-desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.past-summits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.berlin {
+  background-image: url("./images/summit-1.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+}
+
+.australia {
+  background-image: url("./images/summit-1.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+}
+.past-desc-container h2,
+.past-desc-container p {
+  padding-top: 30px;
+  color: #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+  .past-summits {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-about-container,
+  .footer-logo {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .past-desc-container {
+    height: 100%;
+    width: 100%;
+  }
+  .footer-logo img {
+    width: 100%;
+    height: 80px;
   }
 }
