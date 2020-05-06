@@ -166,13 +166,14 @@ nav {
   height: 100%;
   opacity: 0.9;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(220, 220, 220, 1) 55%,
-    rgba(138, 138, 138, 1) 100%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(220, 220, 220, 1) 55%,
+      rgba(138, 138, 138, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    );
 }
 
 .desc {
@@ -660,7 +661,8 @@ nav {
     width: 100%;
     padding: 5px;
   }
-  .about-desc h1{
+
+  .about-desc h1 {
     font-size: 21px;
   }
 }
