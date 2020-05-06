@@ -1,58 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./reset.css" />
-  <script
-  src="https://kit.fontawesome.com/d4de0f4540.js"
-  crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css" />
-  <title>Main page</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="top-nav spacing">
-        <a href="#">Logout</a>
-        <a href="#">My Page</a>
-        <a href="#">English</a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-      </div>
-      <div class="main-nav spacing">
-        <div class="logo ">
-          <a href="/"><img src="./images/main-logo.png" alt="" /></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <script
+      src="https://kit.fontawesome.com/d4de0f4540.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tckent page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="top-nav spacing">
+          <a href="#">Logout</a>
+          <a href="#">My Page</a>
+          <a href="#">English</a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
-        <div class="links">
-          <a href="/index.html" class="active">Home</a>
-          <a href="/about.html">Program</a>
-          <a href="/ticket.html">Join</a>
-          <a href="#">Sponsor</a>
-          <a href="#">News</a>
+        <div class="main-nav spacing">
+          <div class="logo">
+            <a href="/index.html"
+              ><img src="./images/main-logo.png" alt=""
+            /></a>
+          </div>
+          <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">Program</a>
+            <a href="/ticket.html" class="active">Join</a>
+            <a href="#">Sponsor</a>
+            <a href="#">News</a>
+          </div>
+          <div class="compaign-btn">
+            CC Compaign
+          </div>
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon"></i>
+          </span>
         </div>
-        <div class="compaign-btn">
-          CC Compaign
-        </div>
-        <span class="navbar-toggler-icon">
-          <i
-          class="fa fa-navicon"
-          ></i>
-        </span>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
     <!-- Info section -->
-    <section class="info-container">
-      <div class="info-desc">
+    <section
+      class="info-ticket-container d-flex flex-column align-items-center justify-content-center spacing"
+    >
+      <div
+        class="info-desc d-flex flex-column align-items-center justify-content-center"
+      >
         <h1 style="color: #272a31; font-size: 18px;">Select Ticket</h1>
         <div class="line"></div>
       </div>
-      <div class="info-ticket">
+      <div class="info-ticketd-flex align-items-center justify-content-center">
         <p class="step">
           <span style="color: #ec5242;">Step 1 ⭐️ </span> Please select lunch
           for selected day.No further cost
@@ -60,9 +68,11 @@
       </div>
     </section>
 
-    <section class="tickets">
+    <section
+      class="tickets d-flex align-items-center justify-content-center spacing"
+    >
       <h2 class="none">Ticket</h2>
-      <table class="table">
+      <table>
         <thead>
           <tr>
             <th scope="col">Ticket</th>
@@ -73,73 +83,110 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Date</th>
-            <td>15.Oct(Fri)</td>
-            <td>16.Oct(Sat)</td>
-            <td>17.Oct(SUN</td>
-            <td>18.Oct(Mon)</td>
+            <td data-label="Account">Date</td>
+            <td data-label="Due Date">15.Oct(Fri)</td>
+            <td data-label="Amount">16.Oct(Sat)</td>
+            <td data-label="Period">17.Oct(SUN</td>
+            <td data-label="Period">19.Oct(SUN</td>
           </tr>
           <tr>
-            <th scope="row">Normal</th>
-            <td>$200</td>
-            <td>$400</td>
-            <td>$600</td>
-            <td>$800</td>
+            <td scope="row" data-label="Account">Normal</td>
+            <td data-label="Due Date">$200</td>
+            <td data-label="Amount">$400</td>
+            <td data-label="Period">$800</td>
+            <td data-label="Period">$900</td>
           </tr>
           <tr>
-            <th scope="row">Students</th>
-            <td>$300</td>
-            <td>$200</td>
-            <td>$100</td>
-            <td>$50</td>
+            <td scope="row" data-label="Account">Students</td>
+            <td data-label="Due Date">$300</td>
+            <td data-label="Amount">$200</td>
+            <td data-label="Period">$100</td>
+            <td data-label="Period">$50</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-   
-
-    <section class="lunch-section">
+    <section
+      class="lunch-section d-flex align-items-center justify-content-center flex-column spacing"
+    >
       <h2 class="none">Lunch</h2>
-      <div class="lunch-section">
+      <div class="d-flex align-items-center justify-content-center flex-column">
         <h2>Select Lunch</h2>
         <div class="line"></div>
       </div>
-
-      <div class="menu">
-        <div class="grey"></div>
-        <div class="menu-items">
-          <input type="radio" id="menu-one" name="menu-one" value="menu-one" />
-          <label for="menu-one">Menu-1</label>
-          <input type="radio" id="menu-two" name="menu-two" value="menu-two" />
-          <label for="menu-two">Menu-2</label>
-          <input
-            type="radio"
-            id="menu-three"
-            name="menu-three"
-            value="menu-three"
-          />
-          <label for="menu-three">Menu-3</label>
-          <input
-            type="radio"
-            id="menu-four"
-            name="menu-four"
-            value="menu-four"
-          />
-          <label for="menu-four">Menu-4</label>
+      <div
+        class="menu-container d-flex align-items-center justify-content-center flex-column"
+      >
+        <div
+          class="menu d-flex align-items-center justify-content-between flex-column"
+        >
+          <div class="grey"></div>
+          <div
+            class="menu-items justify-content-around d-flex align-items-center py-4"
+          >
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="menu-one"
+                name="menu-one"
+                value="menu-one"
+              />
+              <label for="menu-two">Soft Drink</label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="menu-two"
+                name="menu-two"
+                value="menu-two"
+              />
+              <label for="menu-one">Cake</label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="menu-three"
+                name="menu-three"
+                value="menu-three"
+              />
+              <label for="menu-one">Dessert</label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="menu-four"
+                name="menu-four"
+                value="menu-four"
+              />
+              <label for="menu-one">Omena Ugali</label>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="menu">
-        <div class="grey"></div>
-        <div class="menu-items">
-          <input type="radio" id="menu-1" name="menu-1" value="menu-1" />
-          <label for="menu-1">Menu-1</label>
-          <input type="radio" id="menu-2" name="menu-2" value="menu-2" />
-          <label for="menu-1">Menu-2</label>
-          <input type="radio" id="menu-3" name="menu-3" value="menu-3" />
-          <label for="menu-1">Menu-3</label>
-          <input type="radio" id="menu-4" name="menu-4" value="menu-4" />
-          <label for="menu-1">Menu-4</label>
+        <div
+          class="menu d-flex align-items-center justify-content-center flex-column"
+        >
+          <div class="grey"></div>
+          <div
+            class="menu-items justify-content-around d-flex align-items-center py-4"
+          >
+            <div class="radio-container">
+              <input type="radio" id="menu-1" name="menu-1" value="menu-1" />
+              <label for="menu-one">Fanta</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" id="menu-2" name="menu-2" value="menu-2" />
+              <label for="menu-one">Coke</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" id="menu-3" name="menu-3" value="menu-3" />
+              <label for="menu-one">Pepsi</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" id="menu-4" name="menu-4" value="menu-4" />
+              <label for="menu-one">Popcoon</label>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -149,21 +196,16 @@
     </section>
 
     <!-- Footer start -->
-    <footer class="footer-tickect-container">
+    <footer class="footer-about-container spacing">
       <div class="footer-logo">
         <img src="./images/main-logo.png" alt="" />
       </div>
-      <div class="policy">
-        <div class="rights">
-          <p>2020 Creative Commons Global Summit. All right reserved</p>
-        </div>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/ticket.html">Ticket</a>
-          <a href="/about.html">Contact</a>
-          <a href="/about.html">ccglobalsummit@org</a>
-        </div>
+      <div class="footer-links">
+        <p>2020 Creative Commons Nairobi Some Right Researved.</p>
+        <p>
+          We are hosting the live changing summit dont miss the worderful
+          experience ccglobalsummit@org.
+        </p>
       </div>
     </footer>
     <!-- Footer end -->
